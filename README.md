@@ -15,6 +15,21 @@ Flutter (Mobile App)
 Node.js 
 Firebase
 
-![Screenshot 2024-11-17 001002](https://github.com/user-attachments/assets/baee27d8-af78-4a74-9b83-3537bb3db10f)
+# Web Interfaces
+![Screenshot 2024-11-17 001002](https://github.com/user-attachments/assets/52e09582-2c68-4b4d-a124-0d443d0e24f0)
+![Screenshot 2024-11-17 001030](https://github.com/user-attachments/assets/101d3a11-0d56-4ac5-b939-59b1e6cab32e)
+![Screenshot 2024-11-17 002328](https://github.com/user-attachments/assets/faca26b7-4d1c-4dfb-932a-f27961ef062f)
+![Screenshot 2024-11-17 002554](https://github.com/user-attachments/assets/b078e6db-c5b3-4a21-89f6-a12c803dcf6f)
+![Screenshot 2024-11-17 002713](https://github.com/user-attachments/assets/76bc80aa-cf08-4d85-b9cb-600296f7bea9)
+![Screenshot 2024-11-17 002910](https://github.com/user-attachments/assets/53531c60-a399-4bb2-bf45-57dc11c20343)
+![Screenshot 2024-11-30 215117](https://github.com/user-attachments/assets/d28fcb09-0b02-457f-a576-5e262946ce5b)
+![Screenshot 2024-11-30 215300](https://github.com/user-attachments/assets/17905c00-c79b-49eb-bb2d-bfc741a92d69)
+![Screenshot 2024-11-30 215341](https://github.com/user-attachments/assets/5ee32a00-e603-4315-b2ca-86f5a4fe1224)
+![Screenshot 2024-11-30 215442](https://github.com/user-attachments/assets/ac6b766c-753d-4bdc-ad18-7c01d8bdd14c)
+![Screenshot 2024-11-30 215714](https://github.com/user-attachments/assets/b3c651d0-8aec-41b8-996d-587c159ff6a4)
+![Screenshot 2024-11-30 215810](https://github.com/user-attachments/assets/7e98e05a-f67d-40e6-8439-1527e1348de1)
+![Screenshot 2024-11-30 220104](https://github.com/user-attachments/assets/11252b75-07f2-4c4a-abd9-6463c21585ed)
+![Screenshot 2024-11-30 220417](https://github.com/user-attachments/assets/5c9724fd-7cd9-4a68-92f6-c67d8a95e8a2)
+
 
  
