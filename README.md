@@ -47,3 +47,22 @@ A web and mobile platform designed to connect property owners, service providers
 
 # Mobile Interfaces
  
+![Capture1](https://github.com/user-attachments/assets/c13d2d08-75a5-4a45-84c8-68c749a50c84)
+
+![Capture2](https://github.com/user-attachments/assets/4e977541-c228-4b53-a64b-f7fab4691c66)
+
+![Capture3](https://github.com/user-attachments/assets/eabc5739-8a5d-4d81-aa61-e1d898698b7b)
+
+![Capture4](https://github.com/user-attachments/assets/0b9ecdfa-9d51-479d-b55f-0f012a1404c7)
+
+![Capture5](https://github.com/user-attachments/assets/4fcbd25d-99d9-4dde-9797-0c0aa43c0b45)
+
+![Capture6](https://github.com/user-attachments/assets/08802707-6a32-4d3c-9c06-3adfc85fe0b4)
+
+![Capture7](https://github.com/user-attachments/assets/10356040-edbc-49d0-8896-b96776c0baac)
+
+![Capture8](https://github.com/user-attachments/assets/3c517948-1c13-46f7-9fef-faec91e8c289)
+
+![Capture9](https://github.com/user-attachments/assets/9a4d89f2-6fa1-436a-af13-c263de225cd0)
+
+![Capture10](https://github.com/user-attachments/assets/ed61f076-4403-4e99-aeea-0cbbf2e76eca)
