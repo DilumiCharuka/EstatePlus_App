@@ -29,6 +29,8 @@ A web and mobile platform designed to connect property owners, service providers
 
 ![Screenshot 2024-11-30 215117](https://github.com/user-attachments/assets/d28fcb09-0b02-457f-a576-5e262946ce5b)
 
+![Screenshot 2024-12-01 101526](https://github.com/user-attachments/assets/71faebda-7400-4739-b238-7fe734c05420)
+
 ![Screenshot 2024-11-30 215300](https://github.com/user-attachments/assets/17905c00-c79b-49eb-bb2d-bfc741a92d69)
 ![Screenshot 2024-11-30 215341](https://github.com/user-attachments/assets/5ee32a00-e603-4315-b2ca-86f5a4fe1224)
 
