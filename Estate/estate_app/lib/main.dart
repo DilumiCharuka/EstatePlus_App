@@ -1,4 +1,11 @@
 import 'package:flutter/material.dart';
+import 'services_page.dart'; // Import the ServicesPage file
+import 'properties_page.dart'; // Import the PropertiesPage file
+import 'login_page.dart';
+import 'register_page.dart'; // Import the Register Page
+import 'customer_dashboard.dart';
+import 'service_category.dart'; // Import the S
+import 'category_page.dart';
 
 void main() {
   runApp(EstatePlusApp());
@@ -28,9 +35,13 @@ class _MainScreenState extends State<MainScreen> {
 
   final List<Widget> _pages = [
     HomePage(),
-    PropertiesPage(),
-    ServicesPage(),
-    LoginPage(),
+    PropertyPage(), // Properties page
+    ServicesPage(), // Services page
+    LoginPage(), // Login page
+    RegisterPage(),
+    CustomerDashboard(),
+    ServicePage(),
+    CategoryPage(),
   ];
 
   void _onTabTapped(int index) {
@@ -100,227 +111,89 @@ class HomePage extends StatelessWidget {
           ),
         ],
       ),
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            Stack(
-              children: [
-                Container(
-                  height: 300,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: NetworkImage(
-                        'https://static.vecteezy.com/system/resources/thumbnails/023/331/708/small_2x/ai-generative-exterior-of-modern-luxury-house-with-garden-and-beautiful-sky-photo.jpg', // Example background image
-                      ),
-                      fit: BoxFit.cover,
-                    ),
-                  ),
-                ),
-                Container(
-                  height: 300,
-                  color: Colors.black.withOpacity(0.4),
-                  child: Center(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(
-                          'Welcome to EstatePlus',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 28,
-                            fontWeight: FontWeight.bold,
-                          ),
-                          textAlign: TextAlign.center,
-                        ),
-                        SizedBox(height: 10),
-                        Text(
-                          'Your one-stop solution for all your real estate and service needs!',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 16,
-                          ),
-                          textAlign: TextAlign.center,
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ],
-            ),
-            SizedBox(height: 20),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16.0),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  ElevatedButton(
-                    onPressed: () {
-                      // Navigate to the Login Page
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => LoginPage(),
-                        ),
-                      );
-                    },
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.green,
-                      padding: EdgeInsets.symmetric(
-                        horizontal: 50,
-                        vertical: 25,
-                      ),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(20),
-                      ),
-                    ),
-                    child: Text(
-                      'Become a Property Owner',
-                      style: TextStyle(fontSize: 14),
-                    ),
-                  ),
-                  ElevatedButton(
-                    onPressed: () {},
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.green,
-                      padding: EdgeInsets.symmetric(
-                        horizontal: 50,
-                        vertical: 25,
-                      ),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(20),
-                      ),
-                    ),
-                    child: Text(
-                      'Become a Service Provider',
-                      style: TextStyle(fontSize: 14),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-class PropertiesPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Properties'),
-        backgroundColor: Colors.green,
-      ),
-      body: Center(
-        child: Text(
-          'Properties Page',
-          style: TextStyle(fontSize: 20),
-        ),
-      ),
-    );
-  }
-}
-
-class ServicesPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Services'),
-        backgroundColor: Colors.green,
-      ),
-      body: Center(
-        child: Text(
-          'Services Page',
-          style: TextStyle(fontSize: 20),
-        ),
-      ),
-    );
-  }
-}
-
-class LoginPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
       body: Stack(
         children: [
+          // Full-page background image
           Container(
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: NetworkImage('https://static.vecteezy.com/system/resources/thumbnails/023/331/708/small_2x/ai-generative-exterior-of-modern-luxury-house-with-garden-and-beautiful-sky-photo.jpg'),
+                image: NetworkImage(
+                  'https://static.vecteezy.com/system/resources/thumbnails/023/331/708/small_2x/ai-generative-exterior-of-modern-luxury-house-with-garden-and-beautiful-sky-photo.jpg',
+                ),
                 fit: BoxFit.cover,
               ),
             ),
           ),
-          Center(
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              padding: EdgeInsets.all(20),
-              decoration: BoxDecoration(
-                color: Colors.white.withOpacity(0.8),
-                borderRadius: BorderRadius.circular(15),
-              ),
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Text(
-                    'Login',
-                    style: TextStyle(
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  SizedBox(height: 20),
-                  TextField(
-                    decoration: InputDecoration(
-                      labelText: 'Email',
-                      prefixIcon: Icon(Icons.email),
-                      border: OutlineInputBorder(),
-                    ),
-                  ),
-                  SizedBox(height: 20),
-                  TextField(
-                    obscureText: true,
-                    decoration: InputDecoration(
-                      labelText: 'Password',
-                      prefixIcon: Icon(Icons.lock),
-                      border: OutlineInputBorder(),
-                    ),
-                  ),
-                  SizedBox(height: 20),
-                  ElevatedButton(
-                    onPressed: () {},
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.green,
-                      padding: EdgeInsets.symmetric(vertical: 15),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10),
+          // Semi-transparent overlay to make content stand out
+          Container(
+            color: Colors.black.withOpacity(0.4),
+          ),
+          // Content
+          Column(
+            children: [
+              Expanded(
+                child: SingleChildScrollView(
+                  child: Column(
+                    children: [
+                      SizedBox(height: 20),
+                      Text(
+                        'Welcome to EstatePlus',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 28,
+                          fontWeight: FontWeight.bold,
+                        ),
+                        textAlign: TextAlign.center,
                       ),
-                    ),
-                    child: Text(
-                      'Login',
-                      style: TextStyle(fontSize: 16),
-                    ),
+                      SizedBox(height: 10),
+                      Text(
+                        'Your one-stop solution for all your real estate and service needs!',
+                        style: TextStyle(
+                          color: Colors.white70,
+                          fontSize: 16,
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                      SizedBox(height: 20),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 14.0),
+                        child: Text(
+                          'At EstatePlus, we simplify the real estate experience by connecting property owners, buyers, renters, and trusted service providers in one convenient platform.',
+                          style: TextStyle(fontSize: 16, color: Colors.white70),
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                    ],
                   ),
-                  SizedBox(height: 10),
-                  GestureDetector(
-                    onTap: () {
-                      // Add register logic
-                    },
-                    child: Text(
-                      "Don't have an account? Register here.",
+                ),
+              ),
+              // Footer with contact information
+              Container(
+                color: Colors.black.withOpacity(0.6),
+                padding: EdgeInsets.all(10),
+                child: Column(
+                  children: [
+                    Text(
+                      'Contact Us',
                       style: TextStyle(
-                        color: Colors.green,
-                        decoration: TextDecoration.underline,
+                        color: Colors.white,
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
                       ),
                     ),
-                  ),
-                ],
+                    SizedBox(height: 5),
+                    Text(
+                      'Phone: +1 234 567 890',
+                      style: TextStyle(color: Colors.white70, fontSize: 14),
+                    ),
+                    Text(
+                      'Email: support@estateplus.com',
+                      style: TextStyle(color: Colors.white70, fontSize: 14),
+                    ),
+                  ],
+                ),
               ),
-            ),
+            ],
           ),
         ],
       ),
